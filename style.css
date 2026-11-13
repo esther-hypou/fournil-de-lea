@@ -1,0 +1,216 @@
+:root{
+    --couleur-principale:#8a4b1f;
+    --couleur-fond: #fbf3e4;
+    --couleur-texte : #2b2118;
+    --espace : 1.5rem;
+}
+
+/* Remise à zéro de quelques réglages du navigateur */
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    font-family: verdana, sans-serif;
+    line-height: 1.5rem;
+    color:var(--couleur-texte);
+}
+
+* { box-sizing: border-box; }
+
+
+nav{
+    color : var(--couleur-fond);
+    display: flex;
+    align-items: center;
+    padding: var(--espace);
+    justify-content: space-between;
+    background-color: var(--couleur-principale);
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    gap:var(--espace);
+    list-style:none;
+}
+
+nav a{
+    text-decoration: none;
+    margin:0px;
+    padding: 0px;
+    color : var(--couleur-fond);
+}
+
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+
+#accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem;
+    background-color: var(--couleur-fond);
+}
+
+h1{
+    font-size: 2.5rem;
+    color:var(--couleur-principale);
+}
+
+section{
+    max-width: 1100px;
+    margin:auto;
+    margin-top: 100px;
+    padding : 1.5rem;
+}
+
+section h2{
+    color:var(--couleur-principale);
+}
+
+.produits {
+    display: flex; 
+    flex-wrap: wrap;
+    gap : var(--espace);
+}  
+
+
+.produit {
+    flex: 1 1 220px;
+    background-color: var(--couleur-fond);
+    padding: 1.2rem;
+    border-radius: 8px;
+}  
+
+
+.produit img{
+    width: 100%;
+    height: auto;
+}
+
+.prix{
+    font-weight:bold;
+    color:var(--couleur-principale);
+}
+
+
+/* Le tableau des horaires */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px;
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #d9c7a8;
+}
+
+/* Le formulaire : une colonne, des champs bien visibles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  font: inherit;
+  border: 2px solid #b8a27e;
+  border-radius: 6px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+
+button {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0 1.5rem;
+  font: inherit;
+  font-weight: bold;
+  color: var(--couleur-fond);
+  background-color: var(--couleur-principale);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+button:hover,
+button:focus {
+  background-color: #74401A;
+}
+
+
+/* Le panier dans le menu */
+.panier {
+ margin: 0;
+ color: #ffffff;
+}
+/* Une classe pour cacher un élément */
+.cache {
+ display: none;
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+    nav{
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  button {
+    align-self: stretch;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
